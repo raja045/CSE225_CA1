@@ -1,0 +1,30 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app ="http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context = ".ToolBar">
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:orderInCategory="3"></item>
+
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/ic_baseline_error_24"
+        android:orderInCategory="1"
+        android:title="About"
+        app:showAsAction="never"></item>
+    <item android:title="Contact Us"
+        android:icon="@drawable/ic_baseline_help_24">
+        <menu >
+            <item android:title="Mail Us"
+                android:icon="@drawable/ic_baseline_mail_24"></item>
+
+            <item android:title="Call Us"
+                android:icon="@drawable/ic_baseline_call_24"></item>
+        </menu>
+
+    </item>
+
+</menu>

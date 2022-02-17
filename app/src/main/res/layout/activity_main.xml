@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="#2F3F98"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:text="Name* "
+            android:textColor="@color/black"
+            android:textSize="8pt"></TextView>
+
+        <EditText
+            android:id="@+id/entertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/nametxt"
+            android:hint="Enter Your Name"
+            android:textSize="8pt"></EditText>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:id="@+id/picc"
+            android:layout_toRightOf="@+id/entertxt"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="35dp"
+            ></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="8pt"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/gen"
+            android:layout_below="@+id/nametxt"></TextView>
+
+        <RadioGroup
+            android:id="@+id/Rgrp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gen"
+            android:layout_marginLeft="10dp">
+
+
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/Trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transgender"></RadioButton>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:id="@+id/enteremail"
+            android:layout_below="@+id/Rgrp1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your email address"
+            android:layout_marginTop="290dp"
+            android:layout_toRightOf="@id/enteremail"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number "
+            android:id="@+id/mobilenumber"
+            android:layout_below="@+id/editTextTextEmailAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mobilenumber"
+            android:layout_marginTop="360dp"
+            android:layout_marginStart="28dp"
+
+            android:ems="10"
+            android:inputType="phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Father Name "
+            android:id="@+id/fathernametxt"
+            android:layout_below="@+id/mobilenumber"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            ></TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Father Name"
+            android:textSize="8pt"
+            android:id="@+id/fathertxt"
+            android:layout_toRightOf="@id/fathernametxt"
+            android:layout_marginTop="410dp"
+            ></EditText>
+        <TextView
+            android:id="@+id/mothername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/fathernametxt"
+            android:layout_marginTop="20dp"
+            android:text="Mother Name "
+            android:textColor="@color/black"
+            android:textSize="8pt"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your mother Name"
+            android:textSize="8pt"
+            android:id="@+id/motherentertxt"
+            android:layout_toRightOf="@id/mothername"
+            android:layout_marginTop="450dp"
+            ></EditText>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Upload your Pic here"
+            android:id="@+id/pic"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/mothername"
+            ></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tick"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="8pt"
+            android:layout_below="@+id/pic"
+            android:text="Tick the Language(you should Speak and Write)">
+        </TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hin"
+            android:layout_below="@id/tick"
+            android:text="Hindi"></CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eng"
+            android:layout_below="@id/hin"
+            android:text="English"></CheckBox>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/eng"
+        android:textSize="8pt"
+        android:text="Select the Wing you want to join"></TextView>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:layout_toRightOf="@+id/spinner"
+        android:layout_marginTop="750dp"
+        ></Spinner>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_below="@+id/spin"
+        ></Button>
+
+
+    </RelativeLayout>
+</ScrollView>
